@@ -46,7 +46,22 @@ export default function ContactPage() {
           <strong style={{ color: "#94a3b8" }}>30分</strong>
           で専門家がレビューします。
           <br />
-          https://m.kuku.lu/f.php?cd245b7c82
+          href="https://m.kuku.lu/f.php?cd245b7c82"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: "inline-block",
+            background: "#ef4444",
+            color: "white",
+            padding: "16px 40px",
+            textDecoration: "none",
+            fontSize: 16,
+            letterSpacing: ".04em",
+            marginTop: 8,
+          }}
+        >
+          レビューを予約する →
+        </a>
         </p>
         <a
           href="/diagnostic"
