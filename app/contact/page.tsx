@@ -45,7 +45,8 @@ export default function ContactPage() {
           AI導入プロジェクトの構造リスクを、
           <strong style={{ color: "#94a3b8" }}>30分</strong>
           で専門家がレビューします。
-          <br />
+        </p>
+        <a
           href="https://m.kuku.lu/f.php?cd245b7c82"
           target="_blank"
           rel="noopener noreferrer"
@@ -53,15 +54,26 @@ export default function ContactPage() {
             display: "inline-block",
             background: "#ef4444",
             color: "white",
-            padding: "16px 40px",
+            padding: "18px 48px",
             textDecoration: "none",
             fontSize: 16,
+            fontFamily: "'Georgia','Times New Roman',serif",
             letterSpacing: ".04em",
-            marginTop: 8,
+            marginBottom: 16,
+            transition: "all .2s",
           }}
         >
           レビューを予約する →
         </a>
+        <p
+          style={{
+            fontSize: 12,
+            color: "#334155",
+            fontFamily: "monospace",
+            marginBottom: 48,
+          }}
+        >
+          無料 / 30分 / オンライン
         </p>
         <a
           href="/diagnostic"
@@ -69,13 +81,12 @@ export default function ContactPage() {
             display: "inline-block",
             background: "transparent",
             border: "1px solid #334155",
-            color: "#94a3b8",
-            padding: "14px 32px",
+            color: "#64748b",
+            padding: "12px 28px",
             textDecoration: "none",
-            fontSize: 14,
-            fontFamily: "inherit",
+            fontSize: 13,
+            fontFamily: "monospace",
             letterSpacing: ".06em",
-            transition: "all .18s",
           }}
         >
           ← 診断に戻る
