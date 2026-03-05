@@ -46,7 +46,7 @@ export default function ContactPage() {
           <strong style={{ color: "#94a3b8" }}>30分</strong>
           で専門家がレビューします。
           <br />
-          予約フォームをこちらに設置してください。
+          https://m.kuku.lu/f.php?cd245b7c82
         </p>
         <a
           href="/diagnostic"
