@@ -45,14 +45,16 @@ export default function ContactPage() {
           AI導入プロジェクトの構造リスクを、
           <strong style={{ color: "#94a3b8" }}>30分</strong>
           で専門家がレビューします。
+          <br />
+          LinkedInよりDMにてお気軽にご連絡ください。
         </p>
         <a
-          href="https://m.kuku.lu/f.php?cd245b7c82"
+          href="https://www.linkedin.com/in/hideki-masube-6b0a713a0/"
           target="_blank"
           rel="noopener noreferrer"
           style={{
             display: "inline-block",
-            background: "#ef4444",
+            background: "#0a66c2",
             color: "white",
             padding: "18px 48px",
             textDecoration: "none",
@@ -60,10 +62,9 @@ export default function ContactPage() {
             fontFamily: "'Georgia','Times New Roman',serif",
             letterSpacing: ".04em",
             marginBottom: 16,
-            transition: "all .2s",
           }}
         >
-          レビューを予約する →
+          LinkedIn でDMする →
         </a>
         <p
           style={{
@@ -79,7 +80,6 @@ export default function ContactPage() {
           href="/diagnostic"
           style={{
             display: "inline-block",
-            background: "transparent",
             border: "1px solid #334155",
             color: "#64748b",
             padding: "12px 28px",
