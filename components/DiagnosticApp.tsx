@@ -847,16 +847,20 @@ export default function DiagnosticApp() {
                     label={{ value: `業界平均 ${INDUSTRY_AVG_DEATH}%`, position: "right", fill: "#334155", fontSize: 10, fontFamily: "monospace" }} />
                   <ReferenceLine x={INDUSTRY_AVG_MATURITY} stroke="#1e293b" strokeDasharray="4 4"
                     label={{ value: `平均DM ${INDUSTRY_AVG_MATURITY}`, position: "top", fill: "#334155", fontSize: 10, fontFamily: "monospace" }} />
-                  <Scatter data={industryData} shape={({ cx, cy }: { cx: number; cy: number }) =>
-                    <circle cx={cx} cy={cy} r={4} fill="#1e293b" stroke="#334155" strokeWidth={1} />
-                  } />
-                  <Scatter data={userPoint} shape={({ cx, cy }: { cx: number; cy: number }) => (
-                    <g>
-                      <circle cx={cx} cy={cy} r={12} fill="rgba(239,68,68,.2)" stroke="#ef4444" strokeWidth={1.5} />
-                      <circle cx={cx} cy={cy} r={5} fill="#ef4444" />
-                      <text x={cx + 16} y={cy + 4} fill="#ef4444" fontSize={11} fontFamily="monospace">あなた</text>
-                    </g>
-                  )} />
+                  <Scatter data={industryData} shape={(props: unknown) => {
+                    const { cx, cy } = props as { cx: number; cy: number };
+                    return <circle cx={cx} cy={cy} r={4} fill="#1e293b" stroke="#334155" strokeWidth={1} />;
+                  }} />
+                  <Scatter data={userPoint} shape={(props: unknown) => {
+                    const { cx, cy } = props as { cx: number; cy: number };
+                    return (
+                      <g>
+                        <circle cx={cx} cy={cy} r={12} fill="rgba(239,68,68,.2)" stroke="#ef4444" strokeWidth={1.5} />
+                        <circle cx={cx} cy={cy} r={5} fill="#ef4444" />
+                        <text x={cx + 16} y={cy + 4} fill="#ef4444" fontSize={11} fontFamily="monospace">あなた</text>
+                      </g>
+                    );
+                  }} />
                 </ScatterChart>
               </ResponsiveContainer>
             </div>
